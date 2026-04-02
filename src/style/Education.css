@@ -1,0 +1,45 @@
+#education{
+     padding: 0.5rem 1rem; 
+     
+}
+.card{
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+    padding:1rem;
+    border-radius: 20px;
+    display:  block;
+    
+    
+}
+.card h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.card li{
+    margin:0 2rem;
+    list-style-type: square;
+
+}
+
+@media (min-width: 768px) {
+
+     #education {
+        width: 45%;
+        float: left;
+    }
+
+    .card {
+        padding: 1.5rem;
+        border-radius: 30px;
+    }
+
+    .card h2 {
+        font-size: 1.8rem;
+    }
+
+    .card li {
+        font-size: 1rem;
+    }
+}

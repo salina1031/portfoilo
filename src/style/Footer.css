@@ -1,0 +1,40 @@
+
+.footer-class {
+  background-color: #111;   /* dark background */
+  color: white;              /* text white */
+  text-align: center;        /* center text */
+  padding: 1.5rem 1rem;      /* spacing */
+  font-family: Arial, sans-serif;
+}
+
+.footer-class span {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.footer-class p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+@media (min-width: 768px) {
+
+  .footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;                /* space between items */
+    padding: 2rem 3rem;
+  }
+
+  .footer-class span {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  .footer-class p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}

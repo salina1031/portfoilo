@@ -1,0 +1,90 @@
+/* Base - Mobile First */
+.Header {
+    display: flex;
+    flex-direction: column; /* mobile: text above, image below */
+   width: 100%;
+   height: auto;
+    /* margin: 1rem 0; */
+    gap: 1rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.Text {
+   align-items: center;
+    display: block;
+}
+.Text h1{
+    font-size: 3rem;
+   margin: 0.8rem 0;
+   font-weight: bold;
+   animation: slide 3s ease-in-out infinite;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@keyframes slide {
+    0% { transform: translateX(0px); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+.Text p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.picture {
+    width: 100%;
+    padding: 1rem 0;
+   
+    
+}
+
+.picture img {
+    width: 95%; /* mobile friendly */
+    max-width: 450px;
+     border-radius: 34px;
+    height: auto;
+    object-fit: contain;
+    
+}
+
+@media (min-width: 768px) {
+    .Header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin: 3rem 0;
+    }
+
+    .Text {
+        width: 40%;
+        text-align: left;
+        padding-left: 2rem;
+        
+       
+    }
+    .Text h1{
+        margin-top: 2rem;
+        font-size: 4rem;
+    }
+    .Text p{
+        font-size: 1.5rem;
+    }
+
+    .picture {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .picture img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 350px;
+        box-shadow: 1px 1px 7px 1px rgb(15, 15, 15);
+    }
+    .picture:hover{
+        transform: scale(1.01);
+    }
+}

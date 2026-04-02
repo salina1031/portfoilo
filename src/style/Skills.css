@@ -1,0 +1,31 @@
+.skill-section{
+     box-sizing: border-box;
+    background-color: white;
+    color: black;
+    padding: 1rem 0;
+    border-radius: 20px;
+    display:  block;
+    margin: 1rem;
+   
+}
+.skill-section h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.skill-section li{
+    
+    list-style-type: square;
+
+}
+@media (min-width: 768px) {
+.skill-section{
+    margin: 1rem;
+    width: 50%;
+    display: block;
+    float: right;
+}
+    
+
+    
+}
