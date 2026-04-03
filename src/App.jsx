@@ -19,23 +19,32 @@ const App = () => {
   bio: "Full-Stack Web Developer from Jhapa, Nepal. Skilled in building responsive and interactive web applications using React and Node.js. Passionate about clean design, efficient code, and continuous learning through real projects. Also experienced in video editing and content creation."
 };
 
-  const education = [
+const education = [
+  {
+    degree: "BIT Information Technology",
+    college: "Balmiki Lincoln University",
+    year: "2023-2027",
+    status:"ongoing",
+    field: "IT & Software Development",
+    description: "Four-year IT program covering software development, networking, cybersecurity, and data management"
+  },
+  {
+    degree: "High School",
+    college: "Kanchanjunga Namuna College",
+    year: "2021-2023",
+    status:"Completed",
+    field: "Science",
+    description: "Focused on Science subjects including Physics, Chemistry, and computer science."
+  },
+  {
+    degree: "SEE",
+    college: "Kanchanjunga Namuna College",
+    year: "2020",
+    status:"Completed",
 
-    {
-      degree: "BIT Information Technology",
-      college: "Balmiki  Lincoln University",
-      year: "2023- 2027"
-    },
-    {
-      degree: "High School",
-      college: "Kanchanjunga Namuna College",
-      year: "2021-2023"
-    },{
-      degree: "SEE",
-      college: "Kanchanjunga Namuna College",
-      year: "2020"
-    }
-  ]
+    description: "Completed School Leaving Certificate with general education foundation."
+  }
+];
   const skills=[
     "UI design"," video editing","listening","Solving"
   ]
