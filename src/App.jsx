@@ -15,8 +15,8 @@ const App = () => {
  const user = {
   imageSrc: "src/assets/salina.jpeg",
   name: "Salina Bhattarai",
-  role: "Web Developer",
-  bio: "Full-Stack Web Developer from Jhapa, Nepal. Skilled in building responsive and interactive web applications using React and Node.js. Passionate about clean design, efficient code, and continuous learning through real projects."
+  role: "Web Developer & Video Editor",
+  bio: "Full-Stack Web Developer from Jhapa, Nepal. Skilled in building responsive and interactive web applications using React and Node.js. Passionate about clean design, efficient code, and continuous learning through real projects. Also experienced in video editing and content creation."
 };
 
   const education = [
