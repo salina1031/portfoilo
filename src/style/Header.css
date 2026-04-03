@@ -1,11 +1,17 @@
 .header {
   padding: 60px 20px;
   background: var(--bg);
-  border-bottom: 1px solid var(--brd)
+  border-bottom: 1px solid var(--brd);
+ /* position: relative;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-left: 0; */
+
+
 }
 
 .header-container {
-  max-width: 1100px;
+  max-width: var(--max);
   margin: auto;
   display: flex;
   align-items: center;
@@ -35,21 +41,23 @@
   color: var(--txt2);
   line-height: 1.6;
   margin-bottom: 20px;
+  max-width: 500px; /* keeps text readable */
 }
 
 /* Button */
 .header-btn {
-  padding: 10px 20px;
-  border: none;
+  padding: 10px 22px;
+  border: 1px solid var(--acc);
   background: var(--acc);
   color: #fff;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.25s ease;
 }
 
 .header-btn:hover {
-  background: var(--acc3);
+  background: transparent;
+  color: var(--acc);
 }
 
 /* Image */
@@ -60,20 +68,20 @@
   position: relative;
 }
 
-/* Blur glow behind */
+/* Glow */
 .header-image::before {
   content: "";
   position: absolute;
   width: 320px;
   height: 320px;
   background: var(--acc);
-  filter: blur(40px);
-  opacity: 0.25;
+  filter: blur(30px);
+  opacity: 0.1;
   border-radius: 50%;
   z-index: 0;
 }
 
-/* Profile image */
+/* Profile */
 .header-image img {
   width: 300px;
   height: 300px;
@@ -81,6 +89,7 @@
   border-radius: 50%;
   position: relative;
   z-index: 1;
+  border: 2px solid var(--brd2); /* subtle border */
 }
 
 /* Mobile */
@@ -94,14 +103,19 @@
     font-size: 28px;
   }
 
+  .header-text p {
+    margin: auto;
+  }
+
   .header-image img {
     width: 200px;
     height: 200px;
   }
+
   .header-image::before {
-  width: 220px;
-  height: 220px;
-  filter: blur(20px);
-  opacity: 0.1;
-}
+    width: 220px;
+    height: 220px;
+    filter: blur(25px);
+    opacity: 0.1;
+  }
 }

@@ -45,9 +45,11 @@ const education = [
     description: "Completed School Leaving Certificate with general education foundation."
   }
 ];
-  const skills=[
-    "UI design"," video editing","listening","Solving"
-  ]
+ const skills = {
+  frontend: ["HTML", "CSS", "JavaScript", "React.js"],
+  backend: ["Node.js", "Express.js"],
+  tools: ["Git", "GitHub", "VS Code", "Figma", "Video Editing"]
+};
 
   const project=[
     {title:"expenses",
@@ -58,7 +60,7 @@ const education = [
    const footer={
     phone:"9806011838",
     email:"salinabhattarai@gmail.com",
-    reserveRigtht:" © 2026 Copyright:salina.com"
+    reserveRight:" © 2026 Copyright:salina.com"
 
   }
  
@@ -69,7 +71,10 @@ return (
     <Header Data={user} />
     <Education edu={education} />
     <Skills skill={skills}/>
+    <section id="projects">
+
     <Projects project={project}/>
+    </section>
     <Footer contact={footer}/>
   </>
 )
