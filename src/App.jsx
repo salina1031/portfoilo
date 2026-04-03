@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Education from './components/Education'
+
 // import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
@@ -52,9 +53,24 @@ const education = [
 };
 
   const project=[
-    {title:"expenses",
-      description:"allow user to add ,remove and store their expensess digitally ",
-      link:"https://salina1031.github.io/expenses/"
+    {title:"Nepartha -expenses tracker",
+      imageSrc:"src/assets/nepartha.png",
+      description:"It allow to put the monthly buteses, add the expenses ,see the visually report on the expenses. simple track the money you spend ",
+      github:"https://github.com/salina1031/FinalNepartha",
+      link:"https://final-nepartha.vercel.app/"
+    },
+    {
+      title:"Flappy Bird",
+      imageSrc:"src/assets/flappy.png",
+      description:"2D game created  using  just the javascript ",
+      github:"https://github.com/salina1031/Flappybird",
+      link:"https://flappybird-eta-six.vercel.app/"
+    },{
+      title:"Chatbot",
+      imageSrc:"src/assets/chatbot.png",
+      description:"A web-based AI chatbot that answers questions in real time. Built with React and Vite, it provides instant, intelligent responses to user queries",
+      github:"https://github.com/salina1031/Chatbot-",
+      links:"https://chatbot-five-pi-68.vercel.app/"
     }
   ]
    const footer={
