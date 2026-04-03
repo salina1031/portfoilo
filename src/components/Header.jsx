@@ -1,25 +1,27 @@
-import React from 'react'
-import "../style/Header.css"
+import React from "react";
+import "../style/Header.css";
 
-//about sectin ho
-const Header = ({Data}) => {
- 
+const Header = ({ Data }) => {
   return (
-    <>
-    <div className='Header' id="about">
-      <div className="Text " >
-        <h1>{Data.name}</h1>
-        <p>{Data.role}</p>
-        <p>{Data.bio}</p>
+    <section className="header" id="about">
+      <div className="header-container">
         
-      </div>
-      <div className="picture">
-        <img src={Data.imageSrc} />
+        
+        <div className="header-text">
+          <h1>{Data.name}</h1>
+          <h2>{Data.role}</h2>
+          <p>{Data.bio}</p>
+
+          <button className="header-btn">View Projects</button>
+        </div>
+
+        <div className="header-image">
+          <img src={Data.imageSrc} alt="profile" />
+        </div>
 
       </div>
-    </div>
-    </>
-  )
-}
+    </section>
+  );
+};
 
-export default Header
+export default Header;

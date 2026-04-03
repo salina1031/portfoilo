@@ -1,62 +1,99 @@
-
 .navBar {
-    background-color: rgba(83, 76, 80, 0.228);
-    padding: 0.5rem 1rem; 
-    margin: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--brd);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Logo */
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--txt);
+}
+.name {
+  color: var(--acc);
+}
+/* Links */
+.navLinks {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.navLinks li {
+  font-size: 1rem;
+  color: var(--txt2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.navLinks li:hover {
+  color: var(--acc);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.line {
+  width: 22px;
+  height: 2px;
+  background: var(--txt);
+  transition: 0.3s;
+}
+
+/* Animation */
+.line.active:nth-child(1) {
+  transform: translateY(7px) rotate(50deg);
+}
+.line.active:nth-child(2) {
+  opacity: 0;
+}
+.line.active:nth-child(3) {
+  transform: translateY(-7px) rotate(-50deg);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    box-shadow: 0 0 8px 2px rgb(48, 48, 47);
-    flex-wrap: wrap; /* small screen ma wrap huncha */
-    width: 100%;
-    overflow: hidden;
-}
+  }
 
-.logo img {
-    width: 50px; 
-}
-
-.navBar ul {
+  .navLinks {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    display: none;
+  }
+.navLinks.open {
     display: flex;
-    flex-direction: column; 
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    gap: 15px;
-}
+  }
 
-.navBar ul li a {
-    text-decoration: none;
-    color: rgb(212, 210, 207);
-    font-size: 1rem; 
-    font-weight: bold;
-    transition: color 0.3s, transform 0.3s;
-}
+  .navLinks li {
+    padding: 10px;
+    border-radius: 6px;
+  }
 
-.navBar ul li:hover {
-    transform: scale(1.05);
-}
+  .navLinks li:hover {
+    background: var(--bg2);
+    color: var(--acc);
+  }
 
-.navBar ul li a:hover {
-    color: rgb(33, 187, 225);
-}
-
-
-@media (min-width: 768px) {
-    .navBar {
-        flex-wrap: nowrap;
-        
-    }
-
-    .navBar ul {
-        flex-direction: row; /* horizontal menu */
-        width: auto;
-        justify-content: flex-end;
-        gap: 30px;
-    }
-
-    .navBar ul li a {
-        font-size: 1.3rem;
-    }
+  .navLinks li:active {
+    background: var(--acc);
+    color: #fff;
+  }
 }

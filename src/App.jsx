@@ -12,12 +12,12 @@ const App = () => {
   const navData = ["About", "Education", "Skills", "Projects", "Contact"]
 
   // yo about ko lagi
-  const user = {
-    imageSrc: "src/assets/own.JPG",
-    name: "Salina Bhattarai",
-    role: "Web Development Learner",
-    bio: "Curious about learning web development, React, and creating interactive websites."
-  }
+ const user = {
+  imageSrc: "src/assets/salina.jpeg",
+  name: "Salina Bhattarai",
+  role: "Web Developer",
+  bio: "Full-Stack Web Developer from Jhapa, Nepal. Skilled in building responsive and interactive web applications using React and Node.js. Passionate about clean design, efficient code, and continuous learning through real projects."
+};
 
   const education = [
 
