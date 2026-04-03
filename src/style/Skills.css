@@ -1,5 +1,10 @@
+.skill{
+   padding: 60px 20px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--brd);
+}
 .skill-section {
-  box-sizing: border-box;
+
   background: var(--bg3);
   color: var(--txt);
   padding: 20px;

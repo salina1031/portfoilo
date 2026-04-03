@@ -1,38 +1,47 @@
 .navBar {
   background: var(--bg);
   border-bottom: 1px solid var(--brd);
-  padding: 14px 24px;
+  padding: 16px 0;           
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  max-width: var(--max);
+  margin: 0 auto;
 }
-/* Logo */
+
 .logo {
   font-family: 'Syne', sans-serif;
-  font-size: 18px;
+  font-size: 20px;              
   font-weight: 700;
   color: var(--txt);
 }
+
 .name {
   color: var(--acc);
 }
+
 /* Links */
 .navLinks {
   display: flex;
-  gap: 28px;
+  gap: 24px;                    
   list-style: none;
 }
+
 .navLinks li {
-  font-size: 1rem;
+  font-size: 15px;             
   color: var(--txt2);
   cursor: pointer;
-  transition: 0.2s;
+  transition: color 0.2s, background 0.2s;
+  padding: 6px 8px;           
+  border-radius: 6px;
 }
+
 .navLinks li:hover {
   color: var(--acc);
+  background: var(--bg2);      
 }
 
 /* Hamburger */
@@ -44,21 +53,20 @@
 }
 
 .line {
-  width: 22px;
+  width: 24px;
   height: 2px;
   background: var(--txt);
   transition: 0.3s;
 }
 
-/* Animation */
 .line.active:nth-child(1) {
-  transform: translateY(7px) rotate(50deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .line.active:nth-child(2) {
   opacity: 0;
 }
 .line.active:nth-child(3) {
-  transform: translateY(-7px) rotate(-50deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile */
@@ -69,22 +77,23 @@
 
   .navLinks {
     position: absolute;
-    top: 60px;
+    top: 64px;                  
     left: 0;
     right: 0;
     background: var(--bg);
     flex-direction: column;
-    padding: 16px;
-    gap: 16px;
+    padding: 16px 24px;
+    gap: 12px;
     display: none;
   }
-.navLinks.open {
+
+  .navLinks.open {
     display: flex;
   }
 
   .navLinks li {
-    padding: 10px;
-    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
   }
 
   .navLinks li:hover {
