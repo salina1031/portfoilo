@@ -73,12 +73,13 @@ const education = [
       links:"https://chatbot-five-pi-68.vercel.app/"
     }
   ]
-   const footer={
-    phone:"9806011838",
-    email:"salinabhattarai@gmail.com",
-    reserveRight:" © 2026 Copyright:salina.com"
-
-  }
+  const footer = {
+  phone: "9806011838",
+  email: "salinabhattarai@gmail.com",
+  github: "https://github.com/salina1031",
+  linkedin: "https://www.linkedin.com/in/salina-bhattarai-61b882311/", 
+  reserveRight: "© 2026 Copyright: salina.com"
+};
  
 
 return (

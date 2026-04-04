@@ -4,8 +4,8 @@ import "../style/Skills.css"
 const Skills = ({ skill }) => {
   return (
     <div className='skill'>
-      <section className="skill-section" id="skills">
         <h2>Skills</h2>
+      <section className="skill-section" id="skills">
 
         {Object.entries(skill).map(([category, items], index) => (
           <div key={index} className="skill-category">

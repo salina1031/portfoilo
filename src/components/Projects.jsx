@@ -4,7 +4,8 @@ import "../style/Project.css";
 
 const Projects = ({ project }) => {
   return (
-    /* 1. Added 'section' class to apply your global max-width and padding */
+    <div className="project">
+
     <section id="projects" className='section project-section'>
       
       {/* 2. Added 'sec-title' for your global header styling */}
@@ -30,6 +31,7 @@ const Projects = ({ project }) => {
       </div>
 
     </section>
+        </div>
   );
 };
 

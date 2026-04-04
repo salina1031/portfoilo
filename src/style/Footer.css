@@ -1,36 +1,69 @@
 .footer-class {
-  background: var(--bg2);
-  color: var(--txt);
+
+  padding: 40px 20px;
+  background: var(--bg);
   text-align: center;
-  padding: 2rem 1rem;
-  border-top: 1px solid var(--brd);
+
+  max-width: var(--max);
+  margin: auto;
 }
 
+/* Icon Row */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* Icon Buttons */
+.footer-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  border: 1px solid var(--brd2);
+
+  color: var(--txt2);
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.footer-links a:hover {
+  color: var(--bg);
+  background: var(--acc);
+  border-color: var(--acc);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Phone */
 .footer-class span {
   display: block;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: var(--acc);
+  font-size: 0.7rem;
+  color: var(--txt3);
+  margin-bottom: 6px;
 }
 
+/* Text */
 .footer-class p {
-  font-size: 0.95rem;
-  margin: 0.25rem 0;
-  color: var(--txt2);
+  font-size: 0.7rem;
+  color: var(--txt3);
+  margin: 4px 0;
 }
 
-/* Desktop */
-@media (min-width: 768px) {
+/* Mobile */
+@media (max-width: 680px) {
   .footer-class {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: left;
+    padding: 30px 16px;
   }
 
-  .footer-class span {
-    margin-bottom: 0;
+  .footer-links {
+    gap: 12px;
   }
 }

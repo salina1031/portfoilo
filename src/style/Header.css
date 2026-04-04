@@ -1,6 +1,6 @@
 /* Header Section */
 .header {
-  padding: 60px 20px;
+  padding: 40px 20px;
   background: var(--bg);
   border-bottom: 1px solid var(--brd);
 }
@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  padding: 0 24px;
   flex-wrap: wrap; /* prevents overflow on smaller screens */
 }
 
@@ -22,19 +23,20 @@
 }
 
 .header-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--txt);
 }
 
 .header-text h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: left;
   color: var(--acc);
   margin: 10px 0;
 }
 
 .header-text p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--txt2);
   line-height: 1.6;
   margin-bottom: 20px;
@@ -110,13 +112,16 @@
 
   .header-text h1 {
     font-size: 28px;
+    
   }
 
   .header-text p {
     margin: auto;
     max-width: 90%;
   }
-
+.header-text h2 {
+    text-align: center;
+  }
   .header-image img {
     width: 200px;
     height: 200px;

@@ -12,6 +12,8 @@ function Navigation({ data }) {
   };
 
   return (
+    <section className="Navbar">
+
     <nav className="navBar">
       <div className="logo">
         <span className="name">Salina</span> Bhattarai
@@ -33,6 +35,7 @@ function Navigation({ data }) {
         ))}
       </ul>
     </nav>
+    </section>
   );
 }
 

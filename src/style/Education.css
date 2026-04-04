@@ -4,13 +4,13 @@
   border-bottom: 1px solid var(--brd);
   /* max-width: var(--max);  same as header */
   margin: 0 auto;         /* center section */
-  padding: 60px 20px;     /* match header spacing */
+  padding: 40px 20px;     /* match header spacing */
 }
 
 
 
 #education h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem; 
   text-align: center;
@@ -60,8 +60,9 @@
 
 /* Year pill */
 .timeline-year {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 0.6rem;
+  padding:2px 4px;
+  font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--acc);
@@ -73,7 +74,7 @@
 }
 
 .timeline-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 6px;
   color: var(--txt);
@@ -81,14 +82,14 @@
 }
 
 .timeline-content .college {
-  font-size: 1rem;
-  color: var(--acc2);
+  font-size: 0.9rem;
+  color: var(--acc3);
   font-weight: 500;
   margin-bottom: 6px;
 }
 
 .timeline-content .details {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: var(--txt2);
   margin-bottom: 10px;
@@ -98,16 +99,16 @@
 .status {
   display: inline-block;
   padding: 4px 12px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border-radius: 100px;
   font-weight: 500;
   border: 1px solid;
 }
 
 .status.ongoing {
-  background: rgba(224, 48, 48, 0.1);
+  background: rgba(224, 48, 48, 0.098);
   color: var(--acc3);
-  border-color: rgba(224, 48, 48, 0.25);
+  border-color: rgba(213, 44, 44, 0.345);
 }
 
 .status.completed {
@@ -119,14 +120,14 @@
 /* Mobile */
 @media (max-width: 768px) {
   #education h2 {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
   .timeline-item {
    
     margin-bottom: 40px;
   }
   .timeline-content h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .timeline-item::before {
     width: 12px;

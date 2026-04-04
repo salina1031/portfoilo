@@ -1,54 +1,146 @@
-
-.project-section {
+/* ── Project section ── */
+.project {
   border-bottom: 1px solid var(--brd);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+.project-section {
+  padding: 56px 24px;
+  background: var(--bg);
 }
 
-/* --- Card Layout --- */
+.project-section-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.project-section-header h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.project-section-header p {
+  font-size: 0.88rem;
+  color: var(--txt2);
+}
+
+/* ── Grid — 3 cols → 2 → 1 ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* fixed columns, not auto-fit */
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Card ── */
 .project-card {
   background: var(--bg3);
   border: 1px solid var(--brd2);
   border-radius: var(--radius);
-  padding: 20px;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;             
   display: flex;
-  flex-direction: column; 
+  padding: 1rem;
+  flex-direction: column;
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--acc); /* Adding a touch of your accent color on hover! */
+  transform: translateY(-4px);
+  border-color: var(--acc);    
 }
 
-/* Image */
+/* ── Image ── */
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 175px;
   object-fit: cover;
-  border-radius: var(--radius-sm);
-  margin-bottom: 16px;
+  display: block;               /* removes gap under image */
+  /* no border-radius — overflow:hidden on card handles it */
+}
+
+/* ── Body ── */
+.project-card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 7px;
 }
 
 .project-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
   color: var(--txt);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.project-status {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  background: rgba(224, 48, 48, 0.1);
+  color: var(--acc3);
+  border: 1px solid rgba(224, 48, 48, 0.22);
+  border-radius: 100px;
+  padding: 2px 9px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.project-status.live {
+  background: rgba(62, 207, 90, 0.1);
+  color: #3ecf5a;
+  border-color: rgba(62, 207, 90, 0.22);
 }
 
 .project-card p {
-  font-size: 0.95rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 300;
   color: var(--txt2);
-  margin-bottom: 24px;
-  line-height: 1.6;
-  flex-grow: 1; 
+  line-height: 1.65;
+  margin-bottom: 14px;
+  flex-grow: 1;
 }
 
-/* --- Links/Buttons --- */
+/* ── Tags ── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.project-tag {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  background: var(--bg4);
+  border-radius: 100px;
+  padding: 3px 9px;
+  color: var(--txt3);
+}
+
+/* ── Links ── */
 .project-links {
   display: flex;
   align-items: center;
@@ -57,15 +149,17 @@
 }
 
 .project-links a {
-  color: var(--pur2);
+  font-family: 'Barlow', sans-serif;
   font-weight: 500;
+  font-size: 13px;
+  color: var(--pur2);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   transition: color 0.2s ease;
 }
 
 .project-links a:hover {
-  color: var(--acc); /* Switched to use your global accent color (--acc: #e03030) */
+  color: var(--acc);
 }

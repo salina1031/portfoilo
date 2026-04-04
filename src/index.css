@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:wght@300;400;500;600&family=Share+Tech+Mono&display=swap');
 
 * {
   margin: 0;
@@ -31,7 +31,8 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif; 
+  font-weight: 300;                 
   background: var(--bg);
   color: var(--txt);
   line-height: 1.6;
@@ -39,7 +40,9 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Rajdhani', sans-serif; 
+  font-weight: 700;
+  letter-spacing: 0.5px;               
 }
 
 .divider {
@@ -57,20 +60,21 @@ h1, h2, h3, h4 {
 
 .sec-eyebrow {
   font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--acc);
   margin-bottom: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Share Tech Mono', monospace; 
 }
 
 .sec-title {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   margin-bottom: 32px;
   color: var(--txt);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Rajdhani', sans-serif; 
 }
 
 .btn-fill {
@@ -81,8 +85,9 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-sm);
   font-size: 14px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif; 
   font-weight: 500;
+  letter-spacing: 0.3px;
   transition: background 0.2s;
 }
 
@@ -98,7 +103,7 @@ h1, h2, h3, h4 {
   border-radius: var(--radius-sm);
   font-size: 14px;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Barlow', sans-serif; 
   font-weight: 400;
   transition: border-color 0.2s, color 0.2s;
 }

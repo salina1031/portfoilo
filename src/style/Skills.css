@@ -1,5 +1,5 @@
 .skill{
-   padding: 60px 20px;
+   padding: 40px 20px;
   background: var(--bg);
   border-bottom: 1px solid var(--brd);
 }
@@ -16,9 +16,9 @@
 
 }
 
-.skill-section h2 {
+ h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -36,6 +36,7 @@
 }
 
 .skill-category h3 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
   color: var(--acc);
   text-transform: capitalize;
@@ -59,6 +60,7 @@
 
 @media (min-width: 768px) {
   .skill-section {
-    max-width: 700px;
+    max-width: 900px;
+    
   }
 }
