@@ -58,7 +58,7 @@
   color: var(--txt2);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .skill-section {
     max-width: 900px;
     

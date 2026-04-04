@@ -58,7 +58,7 @@
 }
 
 /* Mobile */
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .footer-class {
     padding: 30px 16px;
   }
