@@ -3,18 +3,22 @@ import Navigation from './components/Navigation'
 import Header from './components/Header'
 import Education from './components/Education'
 
-// import Experience from './components/Experience'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import "./App.css"
+import salinaImg from "./assets/salina.jpeg";
+import neparthaImg from "./assets/nepartha.png";
+import flappyImg from "./assets/flappy.png";
+import chatbotImg from "./assets/chatbot.png";
+
 
 const App = () => {
   const navData = ["About", "Education", "Skills", "Projects", "Contact"]
 
   // yo about ko lagi
  const user = {
-  imageSrc: "src/assets/salina.jpeg",
+  imageSrc: salinaImg,
   name: "Salina Bhattarai",
   role: "Web Developer & Video Editor",
   bio: "Full-Stack Web Developer from Jhapa, Nepal. Skilled in building responsive and interactive web applications using React and Node.js. Passionate about clean design, efficient code, and continuous learning through real projects. Also experienced in video editing and content creation."
@@ -54,20 +58,20 @@ const education = [
 
   const project=[
     {title:"Nepartha -expenses tracker",
-      imageSrc:"src/assets/nepartha.png",
+      imageSrc:neparthaImg,
       description:"It allow to put the monthly buteses, add the expenses ,see the visually report on the expenses. simple track the money you spend ",
       github:"https://github.com/salina1031/FinalNepartha",
       link:"https://final-nepartha.vercel.app/"
     },
     {
       title:"Flappy Bird",
-      imageSrc:"src/assets/flappy.png",
+      imageSrc:flappyImg,
       description:"2D game created  using  just the javascript ",
       github:"https://github.com/salina1031/Flappybird",
       link:"https://flappybird-eta-six.vercel.app/"
     },{
       title:"Chatbot",
-      imageSrc:"src/assets/chatbot.png",
+      imageSrc:chatbotImg,
       description:"A web-based AI chatbot that answers questions in real time. Built with React and Vite, it provides instant, intelligent responses to user queries",
       github:"https://github.com/salina1031/Chatbot-",
       links:"https://chatbot-five-pi-68.vercel.app/"
