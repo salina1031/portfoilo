@@ -42,18 +42,18 @@
   transform: translateY(-3px) scale(1.05);
 }
 
-/* Phone */
+
 .footer-class span {
   display: block;
-  font-size: 0.7rem;
-  color: var(--txt3);
+  font-size: 0.8rem;
+  color: var(--txt2);
   margin-bottom: 6px;
 }
 
 /* Text */
 .footer-class p {
-  font-size: 0.7rem;
-  color: var(--txt3);
+  font-size: 0.8rem;
+  color: var(--txt2);
   margin: 4px 0;
 }
 
