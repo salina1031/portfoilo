@@ -74,7 +74,7 @@ const education = [
       imageSrc:chatbotImg,
       description:"A web-based AI chatbot that answers questions in real time. Built with React and Vite, it provides instant, intelligent responses to user queries",
       github:"https://github.com/salina1031/Chatbot-",
-      links:"https://chatbot-five-pi-68.vercel.app/"
+      link:"https://chatbot-beta-vert-27.vercel.app/"
     }
   ]
   const footer = {

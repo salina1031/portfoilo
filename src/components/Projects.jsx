@@ -24,7 +24,7 @@ const Projects = ({ project }) => {
               <a href={item.github} target="_blank" rel="noreferrer">
                 <MarkGithubIcon size={24} />
               </a>
-              <a href={item.link} target="_blank" rel="noreferrer">View</a>
+              <a href={item.link} target="_blank" rel="noreferrer">view the work</a>
             </div>
           </div>
         ))}
